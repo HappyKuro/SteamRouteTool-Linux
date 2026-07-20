@@ -26,13 +26,13 @@ Requirements: Python 3.8+, iptables, and (optionally) ping. Must run as
 root, for the same reason the original needs an Administrator prompt.
 
 Usage:
-  sudo python3 steamroutetool.py               interactive menu
-  sudo python3 steamroutetool.py --list         print routes + current state, exit
-  sudo python3 steamroutetool.py --block fra    block every relay in pop "fra"
-  sudo python3 steamroutetool.py --unblock fra  unblock every relay in pop "fra"
-  sudo python3 steamroutetool.py --clear        remove every rule this tool made
-  sudo python3 steamroutetool.py --appid 730    use CS2's SDR config instead of TF2's
-  sudo python3 steamroutetool.py --dry-run      print iptables commands, don't run them
+  sudo ./steamroutetool.py                interactive menu
+  sudo ./steamroutetool.py --list         print routes + current state, exit
+  sudo ./steamroutetool.py --block fra    block every relay in pop "fra"
+  sudo ./steamroutetool.py --unblock fra  unblock every relay in pop "fra"
+  sudo ./steamroutetool.py --clear        remove every rule this tool made
+  sudo ./steamroutetool.py --appid 730    use CS2's SDR config instead of TF2's
+  sudo ./steamroutetool.py --dry-run      print iptables commands, don't run them
 
 Credits: original tool by Froody (dfrood/SteamRouteTool), fork by HappyKuro.
 """
@@ -513,7 +513,7 @@ def main():
 
     if os.geteuid() != 0:
         die("SteamRouteTool needs root to manage firewall rules.\n"
-            f"Try: sudo python3 {sys.argv[0]}" + (" " + " ".join(sys.argv[1:]) if len(sys.argv) > 1 else ""))
+            f"Try: sudo {sys.argv[0]}" + (" " + " ".join(sys.argv[1:]) if len(sys.argv) > 1 else ""))
 
     check_environment()
 
