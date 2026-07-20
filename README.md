@@ -138,6 +138,4 @@ GPLv3, matching the original project. See [LICENSE](LICENSE).
 
 - Original design and Windows tool: [Froody](https://github.com/dfrood)
   ([dfrood/SteamRouteTool](https://github.com/dfrood/SteamRouteTool))
-- Windows fork: [HappyKuro/SteamRouteTool](https://github.com/HappyKuro/SteamRouteTool)
-- This Linux port: [HappyKuro](https://github.com/HappyKuro)
-  ([HappyKuro/SteamRouteTool-Linux](https://github.com/HappyKuro/SteamRouteTool-Linux))
+- Windows fork and this Linux port: [HappyKuro](https://github.com/HappyKuro)
