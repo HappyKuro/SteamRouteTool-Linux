@@ -147,16 +147,6 @@ case-insensitive and you can also use the location shown by `--list`.
 - `--dry-run` still performs the read-only checks for real, so its output reflects
   your actual current state; only the rule-adding/removing commands are skipped.
 
-## Development
-
-```bash
-python3 -m unittest discover -s tests -v                          # unit tests, no root needed
-sudo SRT_IPTABLES_TESTS=1 python3 -m unittest discover -s tests   # also exercise real iptables
-```
-
-The iptables tests refuse to run if a `STEAMROUTETOOL` chain already exists, so they
-never touch rules you're actually using.
-
 ## License
 
 GPLv3, matching the original project. See [LICENSE](LICENSE).
